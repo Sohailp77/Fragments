@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    tools:context=".verify">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/verifedit"
+            android:layout_width="339dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="52dp"
+            android:background="@drawable/edittext_background"
+            android:hint="XXX-XXX"
+            android:padding="16dp"
+            android:inputType="phone"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#A9A9A9"
+            app:layout_constraintBottom_toTopOf="@+id/verifybtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.972" />
+
+        <Button
+            android:id="@+id/verifybtn"
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="456dp"
+            android:background="@drawable/button_background"
+            android:text="Verify number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.642"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Enter OTP"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:padding="18dp"
+            android:textStyle="bold"
+            android:textAppearance="@color/white"
+            android:background="@drawable/edittext_background"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/verifedit"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

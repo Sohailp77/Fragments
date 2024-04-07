@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    tools:context=".create_user">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textViewCreateUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create New User"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/editTextName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="339dp"
+            android:layout_height="54dp"
+            android:layout_marginBottom="36dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Name"
+            android:padding="16dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#A9A9A9"
+            app:layout_constraintBottom_toTopOf="@+id/phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="339dp"
+            android:layout_height="54dp"
+            android:layout_marginBottom="36dp"
+            android:background="@drawable/edittext_background"
+            android:hint="phone number"
+            android:inputType="phone"
+            android:padding="16dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#A9A9A9"
+            app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="339dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Password"
+            android:padding="16dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#A9A9A9"
+            app:layout_constraintBottom_toTopOf="@+id/editTextEmail2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextEmail2"
+            android:layout_width="339dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Email"
+            android:padding="16dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#A9A9A9"
+            app:layout_constraintBottom_toTopOf="@+id/buttonCreateUser"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buttonCreateUser"
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/button_background"
+            android:text="Create User"
+            app:layout_constraintBottom_toTopOf="@+id/loginpage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/loginpage"
+            android:layout_width="146dp"
+            android:layout_height="43dp"
+            android:layout_marginBottom="176dp"
+            android:background="@drawable/button_background"
+            android:onClick="onbacktologin"
+            android:text="Back to Log In"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
