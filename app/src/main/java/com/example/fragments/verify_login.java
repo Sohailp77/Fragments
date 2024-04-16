@@ -105,6 +105,7 @@ public class verify_login extends Fragment {
 
         PhoneAuthProvider.verifyPhoneNumber(options);
     }
+
     private void signInWithPhoneAuthCredential(PhoneAuthCredential credential) {
         mAuth.signInWithCredential(credential)
                 .addOnCompleteListener(requireActivity(), new OnCompleteListener<AuthResult>() {
